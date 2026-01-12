@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+        header {
+      background-color: rgb(204, 85, 64);
+      color: aliceblue;
+      padding: 30px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+
+
+     .top-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 10px;
+     }
+
+
+
+     .logo {
+      height: 50px;
+      width: auto;
+      border-radius: 50px;
+      }
+
+      .top-header h1 {
+    font-size: 28px;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+
+
+nav {
+    font-size: 16px;
+}
+
+
+
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+
+
+
+nav a:hover {
+    color: rgb(14, 14, 2);
+    text-decoration: underline;
+}
+
+
+
+nav a:not(:last-child)::after {
+    context: "|";
+    margin-left: 10px;
+}
+
+
+
+
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(30, 64, 81);
+        }
+        section 
+        {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: rgb(218, 162, 206);
+        }
+      h2
+        {
+            text-align: center;
+        }
+        .image-grid
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .image-grid img
+        {
+            width: 100%;
+            height: 220px;
+            object-fit: fill;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px rgb(8, 0, 11) ;
+            transition: transform 0.03s ease;
+        }
+        .image-grid img:hover
+        {
+            transform: scale(1.20);
+        }
+        @media (max-width:860px)
+        {
+            .image-grid
+            {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+         @media (max-width:480px)
+        {
+            .image-grid
+            {
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    </style>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top-header">
+         <img src="./Image/kolhapur mahalakshi .jpg" alt="Discover kolhapur logo" width="200" height="200" class="logo"/>
+        <h1>Discover Kolhapur</h1>
+        </div>
+        
+        <nav>
+              <a href="validlogin.html">Login</a>
+            <a href="index.html">Home</a>
+            <a href="event.html">Places</a> 
+            <a href="#">Gallery</a>
+            <a href="form1.html.html">Booking</a>
+            
+        </nav> 
+    </header>
+
+    <section>
+        <h2>Explore Kolhapur view</h2>
+        <div class="image-grid">
+        
+         <img src="./Image/mahalakshmi-temple-kolhapur 1.webp" alt="" >
+         <img src="./Image/kolhapur mahalakshi .jpg" alt="">
+         <img src="./Image/Panhala_Fort.jpg" alt="" >
+         <img src="./Image/Shivaji University.jpg" alt="">
+         <img src="./Image/kolhapur Nameplate.png" alt="" >
+         <img src="./Image/shahu place.jpg" alt="" >
+         <img src="./Image/Rankala.png" alt="">
+         <img src="./Image/kaneri math.webp" alt="" >
+         <img src="./Image/New_Terminal_Kolhapur_Airport.jpg" alt="">
+        </div>
+    </section>
+</body>
+</html>

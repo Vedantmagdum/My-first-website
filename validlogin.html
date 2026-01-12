@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(218, 72, 152);
+            color: rgb(83, 223, 176);
+        }
+    </style>
+</head>
+
+<body class="myself">
+
+    <!-- HEADER -->
+    <header>
+        <div class="top-header">
+            <img src="./Image/kolhapur mahalakshi .jpg"
+                 alt="Discover Kolhapur logo"
+                 width="200"
+                 height="200"
+                 class="logo" />
+            <h1>Discover Kolhapur</h1>
+        </div>
+
+        <nav>
+            <a href="validlogin.html">Login</a>
+            <a href="index.html">Home</a>
+            <a href="event.html">Places</a>
+            <a href="imagegallary.html">Gallery</a>
+            <a href="form1.html">Booking</a>
+        </nav>
+    </header>
+
+    <!-- LOGIN FORM -->
+    <h2 style="color: rgb(15, 15, 197);">LOGIN FORM</h2>
+
+    <form id="loginForm" novalidate>
+
+        <div class="body">
+
+            <!-- USERNAME -->
+            <input type="text" id="username" placeholder="Username">
+            <br>
+            <small id="usernameError" style="color: aqua;"></small>
+            <br><br>
+
+            <!-- PASSWORD -->
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <small id="passwordError" style="color: aqua;"></small>
+            <br><br>
+
+            <button type="submit">Login</button>
+
+        </div>
+
+    </form>
+
+    <!-- ✅ JS FILE LINK -->
+    <script src="validlogin.js"></script>
+
+</body>
+</html>
